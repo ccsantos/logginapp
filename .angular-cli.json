@@ -19,9 +19,20 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        /*agregado 1*/
+        /*dentro de dist tengo todas las plantillas, en este caso usé simplex*/
+        "../node_modules/bootswatch/dist/simplex/bootstrap.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
+        /*fin agregado 1*/
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        /*agregado 2*/
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/popper.js/dist/umd/popper.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js"
+        /*fin agregado 2*/
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
